@@ -1,0 +1,7 @@
+Method: Post
+URL: https://test-generator-618956939519.us-central1.run.app/download-tests
+
+Example of request: 
+{
+  "github_url": "https://github.com/ElenaRomanovaCO/project_to_test"
+}
