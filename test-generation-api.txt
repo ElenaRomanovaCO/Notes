@@ -1,5 +1,6 @@
 Method: Post
 URL: https://test-generator-618956939519.us-central1.run.app/download-tests
+Docs: https://test-generator-618956939519.us-central1.run.app/docs/
 
 Example of request: 
 {
