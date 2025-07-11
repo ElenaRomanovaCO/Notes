@@ -1,0 +1,194 @@
+<svg viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="unitGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="integrationGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="e2eGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="800" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2c3e50">
+    Test Pyramid Implementation
+  </text>
+  <text x="500" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#7f8c8d">
+    Foundational framework for organizing testing efforts across different levels
+  </text>
+  
+  <!-- Main Pyramid -->
+  <!-- Unit Tests (Base) -->
+  <polygon points="200,500 600,500 550,450 250,450" 
+           fill="url(#unitGradient)" 
+           stroke="#27ae60" 
+           stroke-width="2" 
+           filter="url(#shadow)"/>
+  
+  <!-- Integration Tests (Middle) -->
+  <polygon points="250,450 550,450 500,400 300,400" 
+           fill="url(#integrationGradient)" 
+           stroke="#e67e22" 
+           stroke-width="2" 
+           filter="url(#shadow)"/>
+  
+  <!-- E2E Tests (Top) -->
+  <polygon points="300,400 500,400 450,350 350,350" 
+           fill="url(#e2eGradient)" 
+           stroke="#c0392b" 
+           stroke-width="2" 
+           filter="url(#shadow)"/>
+  
+  <!-- Layer Labels -->
+  <text x="400" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    UNIT TESTS
+  </text>
+  <text x="400" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    70-80% of tests
+  </text>
+  
+  <text x="400" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    INTEGRATION TESTS
+  </text>
+  <text x="400" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    15-25% of tests
+  </text>
+  
+  <text x="400" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    END-TO-END TESTS
+  </text>
+  <text x="400" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    5-10% of tests
+  </text>
+  
+  <!-- Feedback Speed Arrow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3498db" />
+    </marker>
+  </defs>
+  
+  <line x1="650" y1="500" x2="650" y2="350" 
+        stroke="#3498db" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="670" y="430" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3498db">
+    Faster
+  </text>
+  <text x="670" y="445" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3498db">
+    Feedback
+  </text>
+  
+  <!-- Characteristics Boxes -->
+  
+  <!-- Unit Tests Characteristics -->
+  <rect x="50" y="530" width="280" height="120" rx="8" fill="white" stroke="#2ecc71" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="50" y="530" width="280" height="25" rx="8" fill="#2ecc71"/>
+  <text x="190" y="547" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    UNIT TESTS CHARACTERISTICS
+  </text>
+  <text x="60" y="570" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    • Execution Time: Milliseconds
+  </text>
+  <text x="60" y="585" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    • Scope: Individual components
+  </text>
+  <text x="60" y="600" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    • Feedback: Immediate
+  </text>
+  <text x="60" y="615" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    • Maintenance: Low overhead
+  </text>
+  <text x="60" y="630" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    • Purpose: Component behavior validation
+  </text>
+  
+  <!-- Integration Tests Characteristics -->
+  <rect x="360" y="530" width="280" height="120" rx="8" fill="white" stroke="#f39c12" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="360" y="530" width="280" height="25" rx="8" fill="#f39c12"/>
+  <text x="500" y="547" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    INTEGRATION TESTS CHARACTERISTICS
+  </text>
+  <text x="370" y="570" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    • Execution Time: Minutes
+  </text>
+  <text x="370" y="585" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    • Scope: Component interactions
+  </text>
+  <text x="370" y="600" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    • Focus: Critical data flows
+  </text>
+  <text x="370" y="615" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    • Coverage: System boundaries
+  </text>
+  <text x="370" y="630" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    • Purpose: Integration validation
+  </text>
+  
+  <!-- E2E Tests Characteristics -->
+  <rect x="670" y="530" width="280" height="120" rx="8" fill="white" stroke="#e74c3c" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="670" y="530" width="280" height="25" rx="8" fill="#e74c3c"/>
+  <text x="810" y="547" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    END-TO-END TESTS CHARACTERISTICS
+  </text>
+  <text x="680" y="570" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    • Execution Time: Extended periods
+  </text>
+  <text x="680" y="585" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    • Scope: Complete user journeys
+  </text>
+  <text x="680" y="600" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    • Focus: Happy path scenarios
+  </text>
+  <text x="680" y="615" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    • Maintenance: High overhead
+  </text>
+  <text x="680" y="630" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    • Purpose: Critical business workflows
+  </text>
+  
+  <!-- Key Benefits Box -->
+  <rect x="200" y="680" width="600" height="80" rx="8" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="200" y="680" width="600" height="25" rx="8" fill="#34495e"/>
+  <text x="500" y="697" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    KEY IMPLEMENTATION BENEFITS
+  </text>
+  <text x="220" y="720" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    ✓ Optimizes feedback speed while maintaining comprehensive coverage
+  </text>
+  <text x="220" y="735" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    ✓ Enables confident refactoring and catches regressions early in development
+  </text>
+  <text x="220" y="750" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">
+    ✓ Balances high confidence system validation with manageable maintenance overhead
+  </text>
+  
+  <!-- Connecting Lines -->
+  <line x1="190" y1="475" x2="120" y2="530" stroke="#95a5a6" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="400" y1="425" x2="450" y2="530" stroke="#95a5a6" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="400" y1="375" x2="750" y2="530" stroke="#95a5a6" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- Maintenance Cost Arrow -->
+  <line x1="100" y1="320" x2="700" y2="320" 
+        stroke="#9b59b6" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="400" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#9b59b6">
+    Increasing Maintenance Cost & Execution Time
+  </text>
+  
+  <!-- Confidence Level Arrow -->
+  <line x1="100" y1="280" x2="700" y2="280" 
+        stroke="#16a085" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="400" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#16a085">
+    Increasing Confidence in System Behavior
+  </text>
+</svg>
