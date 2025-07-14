@@ -1,0 +1,173 @@
+<svg viewBox="0 0 1000 650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="650" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="500" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50">CI/CD Pipeline Integration with Quality Gates</text>
+  
+  <!-- Source Code Commit -->
+  <rect x="50" y="60" width="140" height="80" fill="#e74c3c" stroke="#c0392b" stroke-width="2" rx="5"/>
+  <text x="120" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Source Code</text>
+  <text x="120" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Commit</text>
+  <text x="120" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Developer Push</text>
+  
+  <!-- Quality Gate 1 -->
+  <rect x="220" y="60" width="140" height="80" fill="#f39c12" stroke="#e67e22" stroke-width="2" rx="5"/>
+  <text x="290" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Quality Gate 1</text>
+  <text x="290" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Static Analysis</text>
+  <text x="290" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Code Quality</text>
+  <text x="290" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Unit Tests</text>
+  
+  <!-- Build Stage -->
+  <rect x="390" y="60" width="140" height="80" fill="#3498db" stroke="#2980b9" stroke-width="2" rx="5"/>
+  <text x="460" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Build Stage</text>
+  <text x="460" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Artifact</text>
+  <text x="460" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Generation</text>
+  
+  <!-- Quality Gate 2 -->
+  <rect x="560" y="60" width="140" height="80" fill="#f39c12" stroke="#e67e22" stroke-width="2" rx="5"/>
+  <text x="630" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Quality Gate 2</text>
+  <text x="630" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Integration Tests</text>
+  <text x="630" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">API Validation</text>
+  <text x="630" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Security Scans</text>
+  
+  <!-- Test Environment -->
+  <rect x="730" y="60" width="140" height="80" fill="#9b59b6" stroke="#8e44ad" stroke-width="2" rx="5"/>
+  <text x="800" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Test Environment</text>
+  <text x="800" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Deployment</text>
+  <text x="800" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Smoke Tests</text>
+  
+  <!-- Quality Gate 3 -->
+  <rect x="50" y="180" width="140" height="80" fill="#f39c12" stroke="#e67e22" stroke-width="2" rx="5"/>
+  <text x="120" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Quality Gate 3</text>
+  <text x="120" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Extensive Testing</text>
+  <text x="120" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">E2E Tests</text>
+  <text x="120" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Performance</text>
+  
+  <!-- Staging Environment -->
+  <rect x="220" y="180" width="140" height="80" fill="#27ae60" stroke="#229954" stroke-width="2" rx="5"/>
+  <text x="290" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Staging</text>
+  <text x="290" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Environment</text>
+  <text x="290" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">UAT Testing</text>
+  
+  <!-- Quality Gate 4 -->
+  <rect x="390" y="180" width="140" height="80" fill="#f39c12" stroke="#e67e22" stroke-width="2" rx="5"/>
+  <text x="460" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Quality Gate 4</text>
+  <text x="460" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Pre-Production</text>
+  <text x="460" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Final Validation</text>
+  <text x="460" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Security Review</text>
+  
+  <!-- Production Deployment -->
+  <rect x="560" y="180" width="140" height="80" fill="#34495e" stroke="#2c3e50" stroke-width="2" rx="5"/>
+  <text x="630" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Production</text>
+  <text x="630" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Deployment</text>
+  <text x="630" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Health Checks</text>
+  
+  <!-- Monitoring & Rollback -->
+  <rect x="730" y="180" width="140" height="80" fill="#16a085" stroke="#138d75" stroke-width="2" rx="5"/>
+  <text x="800" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Monitoring</text>
+  <text x="800" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">& Rollback</text>
+  <text x="800" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Auto Recovery</text>
+  
+  <!-- Failure Handling Flow -->
+  <rect x="50" y="300" width="820" height="120" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" rx="5"/>
+  <text x="460" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Automated Failure Handling</text>
+  
+  <!-- Failure boxes -->
+  <rect x="80" y="340" width="120" height="60" fill="#e74c3c" stroke="#c0392b" stroke-width="1" rx="3"/>
+  <text x="140" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Build Failure</text>
+  <text x="140" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Immediate</text>
+  <text x="140" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Notification</text>
+  
+  <rect x="220" y="340" width="120" height="60" fill="#e74c3c" stroke="#c0392b" stroke-width="1" rx="3"/>
+  <text x="280" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Test Failure</text>
+  <text x="280" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Pipeline</text>
+  <text x="280" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Halt</text>
+  
+  <rect x="360" y="340" width="120" height="60" fill="#e74c3c" stroke="#c0392b" stroke-width="1" rx="3"/>
+  <text x="420" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Deploy Failure</text>
+  <text x="420" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Auto</text>
+  <text x="420" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Rollback</text>
+  
+  <rect x="500" y="340" width="120" height="60" fill="#e74c3c" stroke="#c0392b" stroke-width="1" rx="3"/>
+  <text x="560" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Health Check</text>
+  <text x="560" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Monitoring</text>
+  <text x="560" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Alert</text>
+  
+  <rect x="640" y="340" width="120" height="60" fill="#e74c3c" stroke="#c0392b" stroke-width="1" rx="3"/>
+  <text x="700" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Rapid Recovery</text>
+  <text x="700" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Tested</text>
+  <text x="700" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Procedures</text>
+  
+  <!-- Success Criteria -->
+  <rect x="50" y="450" width="820" height="120" fill="#d5f4e6" stroke="#27ae60" stroke-width="2" rx="5"/>
+  <text x="460" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Success Criteria & Rapid Feedback</text>
+  
+  <!-- Success boxes -->
+  <rect x="80" y="490" width="120" height="60" fill="#27ae60" stroke="#229954" stroke-width="1" rx="3"/>
+  <text x="140" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Code Quality</text>
+  <text x="140" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Coverage &gt; 80%</text>
+  <text x="140" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">No Critical Issues</text>
+  
+  <rect x="220" y="490" width="120" height="60" fill="#27ae60" stroke="#229954" stroke-width="1" rx="3"/>
+  <text x="280" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Security</text>
+  <text x="280" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Vulnerability</text>
+  <text x="280" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Scans Pass</text>
+  
+  <rect x="360" y="490" width="120" height="60" fill="#27ae60" stroke="#229954" stroke-width="1" rx="3"/>
+  <text x="420" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Performance</text>
+  <text x="420" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Response Time</text>
+  <text x="420" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">&lt; 2 seconds</text>
+  
+  <rect x="500" y="490" width="120" height="60" fill="#27ae60" stroke="#229954" stroke-width="1" rx="3"/>
+  <text x="560" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Integration</text>
+  <text x="560" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">All APIs</text>
+  <text x="560" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Functional</text>
+  
+  <rect x="640" y="490" width="120" height="60" fill="#27ae60" stroke="#229954" stroke-width="1" rx="3"/>
+  <text x="700" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Monitoring</text>
+  <text x="700" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Health Status</text>
+  <text x="700" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Green</text>
+  
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+    <marker id="failarrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
+    </marker>
+  </defs>
+  
+  <!-- Main flow arrows -->
+  <line x1="190" y1="100" x2="220" y2="100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="360" y1="100" x2="390" y2="100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="530" y1="100" x2="560" y2="100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="100" x2="730" y2="100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Curved arrow to next row -->
+  <path d="M 800 140 Q 950 140, 950 220 Q 950 300, 190 300 Q 50 300, 50 220" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Second row arrows -->
+  <line x1="190" y1="220" x2="220" y2="220" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="360" y1="220" x2="390" y2="220" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="530" y1="220" x2="560" y2="220" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="220" x2="730" y2="220" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Failure arrows -->
+  <line x1="290" y1="140" x2="280" y2="340" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#failarrow)"/>
+  <line x1="630" y1="140" x2="420" y2="340" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#failarrow)"/>
+  <line x1="630" y1="260" x2="560" y2="340" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#failarrow)"/>
+  <line x1="800" y1="260" x2="700" y2="340" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#failarrow)"/>
+  
+  <!-- Legend -->
+  <rect x="50" y="590" width="900" height="45" fill="#f8f9fa" stroke="#bdc3c7" stroke-width="1" rx="3"/>
+  <text x="60" y="610" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Legend:</text>
+  <line x1="120" y1="605" x2="150" y2="605" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="160" y="610" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Success Flow</text>
+  <line x1="250" y1="605" x2="280" y2="605" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#failarrow)"/>
+  <text x="290" y="610" font-family="Arial, sans-serif" font-size="10" fill="#e74c3c">Failure Handling</text>
+  <rect x="400" y="600" width="15" height="15" fill="#f39c12" stroke="#e67e22" stroke-width="1" rx="2"/>
+  <text x="425" y="610" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Quality Gates</text>
+  <text x="520" y="610" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Early Detection • Rapid Feedback • Automated Recovery</text>
+</svg>
