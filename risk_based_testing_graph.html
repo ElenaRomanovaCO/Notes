@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk-Based Testing Matrix</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            max-width: 700px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            font-size: 1.8em;
+            font-weight: 500;
+        }
+        
+        .matrix-container {
+            display: grid;
+            grid-template-columns: 120px repeat(3, 1fr);
+            grid-template-rows: 60px repeat(3, 120px);
+            gap: 3px;
+            margin-bottom: 30px;
+        }
+        
+        .cell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .axis-label {
+            background: #34495e;
+            color: white;
+            font-size: 13px;
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+        }
+        
+        .axis-label.horizontal {
+            writing-mode: horizontal-tb;
+        }
+        
+        .high-risk {
+            background: #e74c3c;
+            color: white;
+            font-size: 14px;
+        }
+        
+        .medium-risk {
+            background: #f39c12;
+            color: white;
+            font-size: 14px;
+        }
+        
+        .low-risk {
+            background: #27ae60;
+            color: white;
+            font-size: 14px;
+        }
+        
+        .strategy-text {
+            font-size: 11px;
+            line-height: 1.3;
+            padding: 8px;
+        }
+        
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+        
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+        
+        .empty-cell {
+            background: transparent;
+        }
+        
+        .impact-label {
+            background: #34495e;
+            color: white;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Risk-Based Testing Strategy Matrix</h1>
+        
+        <div class="matrix-container">
+            <!-- Empty corner -->
+            <div class="cell empty-cell"></div>
+            
+            <!-- Impact headers -->
+            <div class="cell impact-label horizontal">Low Impact</div>
+            <div class="cell impact-label horizontal">Medium Impact</div>
+            <div class="cell impact-label horizontal">High Impact</div>
+            
+            <!-- High Probability Row -->
+            <div class="cell axis-label">High Probability</div>
+            <div class="cell medium-risk">
+                <div class="strategy-text">
+                    <strong>MEDIUM RISK</strong><br>
+                    Focused automation<br>
+                    Targeted manual testing
+                </div>
+            </div>
+            <div class="cell high-risk">
+                <div class="strategy-text">
+                    <strong>HIGH RISK</strong><br>
+                    Comprehensive testing<br>
+                    Multiple test types<br>
+                    Extensive coverage
+                </div>
+            </div>
+            <div class="cell high-risk">
+                <div class="strategy-text">
+                    <strong>HIGH RISK</strong><br>
+                    Comprehensive testing<br>
+                    Multiple test types<br>
+                    Extensive coverage
+                </div>
+            </div>
+            
+            <!-- Medium Probability Row -->
+            <div class="cell axis-label">Medium Probability</div>
+            <div class="cell low-risk">
+                <div class="strategy-text">
+                    <strong>LOW RISK</strong><br>
+                    Automated regression<br>
+                    Minimal manual effort
+                </div>
+            </div>
+            <div class="cell medium-risk">
+                <div class="strategy-text">
+                    <strong>MEDIUM RISK</strong><br>
+                    Focused automation<br>
+                    Targeted manual testing
+                </div>
+            </div>
+            <div class="cell high-risk">
+                <div class="strategy-text">
+                    <strong>HIGH RISK</strong><br>
+                    Comprehensive testing<br>
+                    Multiple test types<br>
+                    Extensive coverage
+                </div>
+            </div>
+            
+            <!-- Low Probability Row -->
+            <div class="cell axis-label">Low Probability</div>
+            <div class="cell low-risk">
+                <div class="strategy-text">
+                    <strong>LOW RISK</strong><br>
+                    Automated regression<br>
+                    Minimal manual effort
+                </div>
+            </div>
+            <div class="cell low-risk">
+                <div class="strategy-text">
+                    <strong>LOW RISK</strong><br>
+                    Automated regression<br>
+                    Minimal manual effort
+                </div>
+            </div>
+            <div class="cell medium-risk">
+                <div class="strategy-text">
+                    <strong>MEDIUM RISK</strong><br>
+                    Focused automation<br>
+                    Targeted manual testing
+                </div>
+            </div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background: #e74c3c;"></div>
+                <span>High Risk - Comprehensive Strategy</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #f39c12;"></div>
+                <span>Medium Risk - Focused Strategy</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #27ae60;"></div>
+                <span>Low Risk - Minimal Strategy</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
