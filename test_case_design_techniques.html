@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Case Design Techniques</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            max-width: 700px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+            font-weight: 500;
+        }
+        
+        .techniques-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        .techniques-table th {
+            background: #34495e;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        .techniques-table td {
+            padding: 15px;
+            border-bottom: 1px solid #ecf0f1;
+            vertical-align: top;
+        }
+        
+        .technique-name {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 14px;
+        }
+        
+        .technique-purpose {
+            color: #555;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+        
+        .technique-example {
+            color: #7f8c8d;
+            font-size: 12px;
+            font-style: italic;
+            margin-top: 5px;
+        }
+        
+        .row-boundary { background: #ecf8ff; }
+        .row-equivalence { background: #fef2f2; }
+        .row-decision { background: #fffbeb; }
+        .row-state { background: #f3e8ff; }
+        .row-exploratory { background: #f0fdfa; }
+        
+        .coverage-badge {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+        
+        .badge-boundary { background: #3498db; }
+        .badge-equivalence { background: #e74c3c; }
+        .badge-decision { background: #f39c12; }
+        .badge-state { background: #9b59b6; }
+        .badge-exploratory { background: #1abc9c; }
+        
+        .summary {
+            background: #27ae60;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test Case Design Techniques</h1>
+        
+        <table class="techniques-table">
+            <thead>
+                <tr>
+                    <th>Technique</th>
+                    <th>Purpose & Application</th>
+                    <th>Coverage Focus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row-boundary">
+                    <td>
+                        <div class="technique-name">Boundary Value Analysis</div>
+                    </td>
+                    <td>
+                        <div class="technique-purpose">
+                            Identifies test conditions at the edges of input domains where defects commonly occur
+                        </div>
+                        <div class="technique-example">
+                            Example: Min/max values, edge cases
+                        </div>
+                    </td>
+                    <td>
+                        <span class="coverage-badge badge-boundary">Edge Values</span>
+                    </td>
+                </tr>
+                
+                <tr class="row-equivalence">
+                    <td>
+                        <div class="technique-name">Equivalence Partitioning</div>
+                    </td>
+                    <td>
+                        <div class="technique-purpose">
+                            Groups similar inputs to reduce redundant testing while maintaining coverage
+                        </div>
+                        <div class="technique-example">
+                            Example: Valid/invalid data classes
+                        </div>
+                    </td>
+                    <td>
+                        <span class="coverage-badge badge-equivalence">Input Classes</span>
+                    </td>
+                </tr>
+                
+                <tr class="row-decision">
+                    <td>
+                        <div class="technique-name">Decision Table Testing</div>
+                    </td>
+                    <td>
+                        <div class="technique-purpose">
+                            Systematically explores complex business rules with multiple conditions and outcomes
+                        </div>
+                        <div class="technique-example">
+                            Example: All logical combinations
+                        </div>
+                    </td>
+                    <td>
+                        <span class="coverage-badge badge-decision">Business Rules</span>
+                    </td>
+                </tr>
+                
+                <tr class="row-state">
+                    <td>
+                        <div class="technique-name">State-Based Testing</div>
+                    </td>
+                    <td>
+                        <div class="technique-purpose">
+                            Models application behavior as state machines, ensuring all valid transitions are tested
+                        </div>
+                        <div class="technique-example">
+                            Example: State transitions, workflows
+                        </div>
+                    </td>
+                    <td>
+                        <span class="coverage-badge badge-state">State Transitions</span>
+                    </td>
+                </tr>
+                
+                <tr class="row-exploratory">
+                    <td>
+                        <div class="technique-name">Exploratory Testing</div>
+                    </td>
+                    <td>
+                        <div class="technique-purpose">
+                            Leverages human creativity and intuition to discover unexpected issues with structured charters
+                        </div>
+                        <div class="technique-example">
+                            Example: Creative investigation paths
+                        </div>
+                    </td>
+                    <td>
+                        <span class="coverage-badge badge-exploratory">Unknown Issues</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="summary">
+            Comprehensive coverage achieved through multiple complementary techniques
+        </div>
+    </div>
+</body>
+</html>
